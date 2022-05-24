@@ -9,14 +9,9 @@ class CreateBlogsTagsTable extends Migration
     public function up()
     {
         Schema::create('goosy_blog_blogs_tags', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-
             $table->integer('blog_id')->unsigned();
             $table->integer('tag_id')->unsigned();
             $table->primary(['blog_id', 'tag_id']);
-
-            $table->timestamps();
-            $table->softDeletes();
         });
     }
 
