@@ -91,7 +91,7 @@ class Tag extends Model
 
     public function getTotalViewsAttribute()
     {
-        $blogs = Blog::all();
+        $blogs = Blog::where('author_id', $this->id)->get();
         $totalViews = 0;
 
         foreach ($blogs as $blog) {
