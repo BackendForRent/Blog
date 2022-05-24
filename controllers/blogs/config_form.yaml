@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Blog
+
+# Model Form Field configuration
+form: $/goosy/blog/models/blog/fields.yaml
+
+# Model Class name
+modelClass: Goosy\Blog\Models\Blog
+
+# Default redirect location
+defaultRedirect: goosy/blog/blogs
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: goosy/blog/blogs/update/:id
+    redirectClose: goosy/blog/blogs
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: goosy/blog/blogs
+    redirectClose: goosy/blog/blogs
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

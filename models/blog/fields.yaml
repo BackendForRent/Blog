@@ -1,0 +1,60 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Title
+        type: text
+        span: left
+    slug:
+        label: Slug
+        type: text
+        preset: title
+        span: right
+    content_preview:
+        label: Content preview
+        type: text
+        span: left
+        comment: If left blank, abbreviated text from the "Content" field will be used
+    views:
+        label: Views
+        type: number
+        default: 0
+        span: right
+    content:
+        label: Content
+        type: richeditor
+        span: full
+    author:
+        label: Author
+        type: recordfinder
+        title: Find author
+        nameFrom: nickname
+        list: ~/plugins/goosy/blog/models/author/columns.yaml
+        recordsPerPage: 10
+    category:
+        label: Category
+        type: recordfinder
+        title: Find category
+        nameFrom: title
+        list: ~/plugins/goosy/blog/models/category/columns.yaml
+        recordsPerPage: 10
+    tags:
+        label: Tags
+        type: relation
+        select: title
+    image:
+        label: Blog image
+        type: fileupload
+        span: left
+        mode: image
+        imageHeight: 235
+        imageWidth: 380
+        thumbOptions:
+            mode: crop
+            extension: auto
+    is_published:
+        label: Published
+        type: switch
+        span: right

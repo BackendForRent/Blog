@@ -1,0 +1,24 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    title:
+        label: Title
+    blogs_count:
+        label: Blogs count
+        type: number
+        relation: blogs_count
+        useRelationCount: true
+    total_views:
+        label: Total views
+        type: number
+        valueFrom: total_views
+    created_at:
+        label: Created at
+    is_published:
+        label: Is published
+        type: switch

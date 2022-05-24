@@ -1,0 +1,32 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Title
+        type: text
+        span: left
+    slug:
+        label: Slug
+        type: text
+        preset: title
+        span: right
+    description:
+        label: Description
+        type: richeditor
+        span: full
+    image:
+        label: Category image
+        type: fileupload
+        span: left
+        mode: image
+        imageHeight: 235
+        imageWidth: 380
+        thumbOptions:
+            mode: crop
+            extension: auto
+    is_published:
+        label: Published
+        type: switch
+        span: right

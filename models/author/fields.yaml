@@ -1,0 +1,43 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: First name
+        type: text
+        span: left
+    surname:
+        label: Last name
+        type: text
+        span: right
+    nickname:
+        label: Nickname
+        type: text
+        span: full
+    email:
+        label: Email
+        type: email
+        span: left
+    telephone:
+        label: Telephone
+        type: text
+        span: right
+    description:
+        label: Description
+        type: richeditor
+        span: full
+    avatar:
+        label: Avatar image
+        type: fileupload
+        span: left
+        mode: image
+        imageHeight: 235
+        imageWidth: 380
+        thumbOptions:
+            mode: crop
+            extension: auto
+    is_suspended:
+        label: Suspended
+        type: switch
+        span: right

@@ -1,0 +1,7 @@
+1.0.1:
+    - First version of Blog
+    - create_blogs_table.php
+    - create_authors_table.php
+    - create_categories_table.php
+    - create_tags_table.php
+    - create_blogs_tags_table.php

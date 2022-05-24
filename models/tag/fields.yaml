@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Title
+        type: text
+        span: left
+    slug:
+        label: Slug
+        type: text
+        preset: title
+        span: right
+    blogs:
+        label: Blogs
+        type: relation
+        select: title
+        span: left
+    is_published:
+        label: Published
+        type: switch
+        span: right

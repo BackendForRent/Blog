@@ -1,0 +1,29 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    nickname:
+        label: Nickname
+        searchable: true
+    email:
+        label: Email
+        type: text
+        searchable: true
+    blogs_count:
+        label: Blogs count
+        type: number
+        relation: blogs_count
+        useRelationCount: true
+    total_views:
+        label: Total views
+        type: number
+        valueFrom: total_views
+    created_at:
+        label: Created at
+    is_suspended:
+        label: Is suspended
+        type: switch
