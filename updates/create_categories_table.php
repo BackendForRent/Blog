@@ -15,8 +15,8 @@ class CreateCategoriesTable extends Migration
             $table->string('title')->nullable()->index();
             $table->string('slug')->nullable()->index();
             $table->string('description')->nullable();
-            $table->boolean('is_published')->default(false)->index();
             $table->unsignedInteger('sort_order')->nullable()->index();
+            $table->boolean('is_published')->default(false)->index();
 
             $table->timestamps();
             $table->softDeletes();

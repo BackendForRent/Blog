@@ -81,7 +81,7 @@ class Category extends Model
      */
     public $hasOne = [];
     public $hasMany = [
-        'blog'        => Blog::class,
+        'blogs'       => Blog::class,
         'blogs_count' => Blog::class, 'count' => true
     ];
     public $hasOneThrough = [];
@@ -98,7 +98,7 @@ class Category extends Model
 
     public function getTotalViewsAttribute()
     {
-        $blogs = Blog::where('author_id', $this->id)->get();
+        $blogs = Blog::where('category_id', $this->id)->get();
         $totalViews = 0;
 
         foreach ($blogs as $blog) {

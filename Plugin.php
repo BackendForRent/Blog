@@ -8,6 +8,10 @@ use System\Classes\PluginBase;
  */
 class Plugin extends PluginBase
 {
+    public $require = [
+        'WApi.ApiException'
+    ];
+
     /**
      * Returns information about this plugin.
      *
@@ -94,24 +98,28 @@ class Plugin extends PluginBase
                         'icon'        => 'icon-pencil-square',
                         'url'         => Backend::url('goosy/blog/blogs'),
                         'description' => 'All created blogs.',
+                        'permissions' => ['goosy.marketplaceclient.*'],
                     ],
                     'Authors'         => [
                         'label'       => 'Authors',
                         'icon'        => 'icon-user',
                         'url'         => Backend::url('goosy/blog/authors'),
                         'description' => 'All created authors.',
+                        'permissions' => ['goosy.marketplaceclient.*'],
                     ],
                     'Categories'      => [
                         'label'       => 'Categories',
                         'icon'        => 'icon-folder-open',
                         'url'         => Backend::url('goosy/blog/categories'),
                         'description' => 'All created categories.',
+                        'permissions' => ['goosy.marketplaceclient.*'],
                     ],
                     'Tags'      => [
                         'label'       => 'Tags',
                         'icon'        => 'icon-hashtag',
                         'url'         => Backend::url('goosy/blog/tags'),
                         'description' => 'All created tags.',
+                        'permissions' => ['goosy.marketplaceclient.*'],
                     ],
                 ]
             ],

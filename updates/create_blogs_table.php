@@ -18,10 +18,9 @@ class CreateBlogsTable extends Migration
             $table->text('content')->nullable();
             $table->integer('author_id')->nullable();
             $table->integer('category_id')->nullable();
-            $table->integer('tag_id')->nullable();
             $table->integer('views')->nullable()->default(0);
-            $table->boolean('is_published')->default(false)->index();
             $table->unsignedInteger('sort_order')->nullable()->index();
+            $table->boolean('is_published')->default(false)->index();
 
             $table->timestamps();
             $table->softDeletes();

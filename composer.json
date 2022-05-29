@@ -1,0 +1,11 @@
+{
+    "name": "goosy/blog",
+    "version": "0.1.0",
+    "description": "Goosy Blog plugin.",
+    "authors": [
+        {
+            "name": "Mato Mojzis",
+            "email": "martinmojzis06@gmail.com"
+        }
+    ]
+}

@@ -40,7 +40,7 @@ class Blog extends Model
         'title'        => 'required',
         'content'      => 'required',
         'views'        => 'required',
-        'author_id'      => 'required',
+        'author'       => 'required',
         'slug'         => [
             'required',
             'regex:/(?!^\d+$)^[_A-z0-9\-]*$/',

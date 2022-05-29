@@ -89,17 +89,6 @@ class Tag extends Model
     public $attachOne = [];
     public $attachMany = [];
 
-    public function getTotalViewsAttribute()
-    {
-        $blogs = Blog::where('author_id', $this->id)->get();
-        $totalViews = 0;
-
-        foreach ($blogs as $blog) {
-            $totalViews += $blog->views;
-        }
-        return $totalViews;
-    }
-
     public function scopeIsPublished($query)
     {
         return $query->where('is_published', true);

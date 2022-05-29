@@ -83,7 +83,7 @@ class Author extends Model
      */
     public $hasOne = [];
     public $hasMany = [
-        'blog'        => Blog::class,
+        'blogs'       => Blog::class,
         'blogs_count' => Blog::class, 'count' => true
     ];
     public $hasOneThrough = [];

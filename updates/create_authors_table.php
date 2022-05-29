@@ -18,8 +18,8 @@ class CreateAuthorsTable extends Migration
             $table->text('description')->nullable();
             $table->string('email')->nullable()->unique();
             $table->string('telephone', 25)->nullable();
-            $table->boolean('is_suspended')->default(false)->index();
             $table->unsignedInteger('sort_order')->nullable()->index();
+            $table->boolean('is_suspended')->default(false)->index();
 
             $table->timestamps();
             $table->softDeletes();
